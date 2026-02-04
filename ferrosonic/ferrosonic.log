@@ -1,0 +1,26 @@
+2026-02-04T06:29:26.891626Z  INFO Termsonic starting...
+2026-02-04T06:29:26.892495Z  INFO Loading default config
+2026-02-04T06:29:26.894731Z  INFO Server: https://navi.s0fts0rr0w.com
+2026-02-04T06:29:26.922626Z  INFO Starting MPV with socket: /tmp/ferrosonic-mpv.sock
+2026-02-04T06:29:27.173604Z  INFO MPV started successfully
+2026-02-04T06:29:27.173629Z  INFO MPV started successfully, ready for playback
+2026-02-04T06:29:27.173634Z  INFO Starting MPRIS2 server
+2026-02-04T06:29:27.189064Z  INFO MPRIS2 server started as org.mpris.MediaPlayer2.ferrosonic
+2026-02-04T06:29:27.189088Z  INFO MPRIS server started
+2026-02-04T06:29:27.190680Z  INFO Loaded theme 'Ayu Dark' from /home/charlie/.config/ferrosonic/themes/ayu-dark.toml
+2026-02-04T06:29:27.191066Z  INFO Loaded theme 'Catppuccin' from /home/charlie/.config/ferrosonic/themes/catppuccin.toml
+2026-02-04T06:29:27.191468Z  INFO Loaded theme 'Dracula' from /home/charlie/.config/ferrosonic/themes/dracula.toml
+2026-02-04T06:29:27.191903Z  INFO Loaded theme 'Everforest' from /home/charlie/.config/ferrosonic/themes/everforest.toml
+2026-02-04T06:29:27.192307Z  INFO Loaded theme 'Gruvbox' from /home/charlie/.config/ferrosonic/themes/gruvbox.toml
+2026-02-04T06:29:27.192712Z  INFO Loaded theme 'Kanagawa' from /home/charlie/.config/ferrosonic/themes/kanagawa.toml
+2026-02-04T06:29:27.193039Z  INFO Loaded theme 'Monokai' from /home/charlie/.config/ferrosonic/themes/monokai.toml
+2026-02-04T06:29:27.193339Z  INFO Loaded theme 'Nord' from /home/charlie/.config/ferrosonic/themes/nord.toml
+2026-02-04T06:29:27.193641Z  INFO Loaded theme 'One Dark' from /home/charlie/.config/ferrosonic/themes/one-dark.toml
+2026-02-04T06:29:27.193938Z  INFO Loaded theme 'Rose Pine' from /home/charlie/.config/ferrosonic/themes/rose-pine.toml
+2026-02-04T06:29:27.194230Z  INFO Loaded theme 'Solarized' from /home/charlie/.config/ferrosonic/themes/solarized.toml
+2026-02-04T06:29:27.194844Z  INFO Loaded theme 'Tokyo Night' from /home/charlie/.config/ferrosonic/themes/tokyo-night.toml
+2026-02-04T06:29:27.199122Z  INFO Cava started in noncurses mode (208x14)
+2026-02-04T06:29:27.200955Z  INFO Terminal initialized
+2026-02-04T06:29:27.285920Z  INFO Loaded 33 artists
+2026-02-04T06:29:27.308342Z  INFO Loaded 3 playlists
+2026-02-04T06:29:29.844907Z  INFO Loaded 1 albums for Phantogram

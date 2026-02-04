@@ -1,0 +1,151 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "cpu",
+    "memory",
+    "temperature",
+    "battery",
+    "network",
+    "pulseaudio",
+    "idle_inhibitor",
+    "custom/media",
+    "mpd",
+    "keyboard-state",
+    "tray"
+  ],
+
+  /* -------------------------
+     Workspaces (Hyprland)
+  ------------------------- */
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{id}",
+    "active-only": false
+  },
+
+  /* -------------------------
+     Window Title (Hyprland)
+  ------------------------- */
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 50
+  },
+
+  /* -------------------------
+     Clock
+  ------------------------- */
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  /* -------------------------
+     CPU
+  ------------------------- */
+  "cpu": {
+    "format": "{usage}% "
+  },
+
+  /* -------------------------
+     Memory
+  ------------------------- */
+  "memory": {
+    "format": "{}% "
+  },
+
+  /* -------------------------
+     Temperature
+  ------------------------- */
+  "temperature": {
+    "format": "{temperatureC}°C ",
+    "critical-threshold": 80
+  },
+
+  /* -------------------------
+     Battery
+  ------------------------- */
+  "battery": {
+    "format": "{capacity}% ",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-critical": "{capacity}% "
+  },
+
+  /* -------------------------
+     Network
+  ------------------------- */
+  "network": {
+    "format-wifi": "{essid} ",
+    "format-ethernet": "",
+    "format-disconnected": "Disconnected "
+  },
+
+  /* -------------------------
+     Audio
+  ------------------------- */
+  "pulseaudio": {
+    "format": "{volume}% ",
+    "format-muted": "Muted "
+  },
+
+  /* -------------------------
+     Idle Inhibitor
+  ------------------------- */
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+
+  /* -------------------------
+     Custom Media (Playerctl)
+  ------------------------- */
+  "custom/media": {
+    "exec": "playerctl metadata --format '{{playerName}}: {{title}}' || echo 'No media'",
+    "interval": 5
+  },
+
+  /* -------------------------
+     MPD
+  ------------------------- */
+  "mpd": {
+    "format": "{stateIcon} {artist} - {title}",
+    "format-stopped": "Stopped",
+    "state-icons": {
+      "playing": "",
+      "paused": ""
+    }
+  },
+
+  /* -------------------------
+     Keyboard State
+  ------------------------- */
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": "{name} {state}"
+  },
+
+  /* -------------------------
+     Tray
+  ------------------------- */
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  }
+}

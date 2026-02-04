@@ -1,0 +1,212 @@
+/* -----------------------------------------------------
+   Global
+----------------------------------------------------- */
+* {
+    font-family: "Roboto", "FontAwesome", sans-serif;
+    font-size: 13px;
+    border: none;
+}
+
+/* -----------------------------------------------------
+   Base Bar
+----------------------------------------------------- */
+window#waybar {
+    background: rgba(46, 52, 64, 0.55); /* Nord0 with transparency */
+    border-bottom: 2px solid rgba(76, 86, 106, 0.35); /* Nord3 */
+    color: #ECEFF4;
+    padding: 4px 8px;
+}
+
+window#waybar.hidden {
+    opacity: 0.15;
+}
+
+/* -----------------------------------------------------
+   Module Containers
+----------------------------------------------------- */
+#workspaces,
+#window,
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#idle_inhibitor,
+#power-profiles-daemon,
+#custom-media,
+#mpd,
+#language,
+#keyboard-state {
+    margin: 0 4px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: rgba(67, 76, 94, 0.35); /* Nord2 translucent */
+    transition: background 0.2s ease;
+}
+
+/* Hover effect */
+#workspaces:hover,
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#network:hover,
+#pulseaudio:hover,
+#tray:hover {
+    background: rgba(0, 110, 255, 0.35); /* Frost highlight */
+}
+
+/* -----------------------------------------------------
+   Workspaces
+----------------------------------------------------- */
+#workspaces button {
+    padding: 4px 8px;
+    margin: 0 3px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ECEFF4;
+}
+
+#workspaces button.focused {
+    background: rgba(94, 129, 172, 0.8); /* Frost 3 */
+    color: #ECEFF4;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background: rgba(191, 97, 106, 0.8); /* Aurora Red */
+}
+
+/* -----------------------------------------------------
+   Window Title
+----------------------------------------------------- */
+#window {
+    padding: 4px 12px;
+    background: rgba(76, 86, 106, 0.25);
+    border-radius: 8px;
+}
+
+/* -----------------------------------------------------
+   Clock
+----------------------------------------------------- */
+#clock {
+    background: rgba(76, 86, 106, 0.35);
+}
+
+/* -----------------------------------------------------
+   Battery
+----------------------------------------------------- */
+#battery {
+    background: rgba(236, 239, 244, 0.9);
+    color: #2E3440;
+}
+
+#battery.charging {
+    background: rgba(163, 190, 140, 0.9);
+}
+
+#battery.critical:not(.charging) {
+    background: rgba(191, 97, 106, 0.9);
+    color: #ECEFF4;
+    animation: blink 0.6s infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background: rgba(236, 239, 244, 1);
+        color: #2E3440;
+    }
+}
+
+/* -----------------------------------------------------
+   Network
+----------------------------------------------------- */
+#network {
+    background: rgba(94, 129, 172, 0.6);
+}
+
+#network.disconnected {
+    background: rgba(191, 97, 106, 0.8);
+}
+
+/* -----------------------------------------------------
+   Audio
+----------------------------------------------------- */
+#pulseaudio {
+    background: rgba(139, 149, 235, 0.85);
+    color: #2E3440;
+}
+
+#pulseaudio.muted {
+    background: rgba(76, 86, 106, 0.6);
+    color: #ECEFF4;
+}
+
+/* -----------------------------------------------------
+   CPU / Memory / Temp
+----------------------------------------------------- */
+#cpu {
+    background: rgba(163, 190, 140, 0.8);
+    color: #2E3440;
+}
+
+#memory {
+    background: rgba(142, 175, 180, 0.8);
+}
+
+#temperature {
+    background: rgba(112, 139, 208, 0.8);
+}
+
+#temperature.critical {
+    background: rgba(191, 97, 106, 0.9);
+}
+
+/* -----------------------------------------------------
+   Backlight
+----------------------------------------------------- */
+#backlight {
+    background: rgba(136, 192, 208, 0.8);
+    color: #2E3440;
+}
+
+/* -----------------------------------------------------
+   Tray
+----------------------------------------------------- */
+#tray {
+    background: rgba(94, 129, 172, 0.5);
+}
+
+/* -----------------------------------------------------
+   Idle Inhibitor
+----------------------------------------------------- */
+#idle_inhibitor {
+    background: rgba(59, 66, 82, 0.6);
+}
+
+#idle_inhibitor.activated {
+    background: rgba(236, 239, 244, 0.9);
+    color: #2E3440;
+}
+
+/* -----------------------------------------------------
+   Media
+----------------------------------------------------- */
+#custom-media {
+    background: rgba(143, 188, 187, 0.8);
+    color: #2E3440;
+}
+
+/* -----------------------------------------------------
+   Language / Keyboard State
+----------------------------------------------------- */
+#language,
+#keyboard-state {
+    background: rgba(136, 192, 208, 0.8);
+    color: #2E3440;
+}

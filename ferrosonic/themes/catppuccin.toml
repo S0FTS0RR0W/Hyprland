@@ -1,0 +1,20 @@
+[colors]
+primary = "#89b4fa"
+secondary = "#585b70"
+accent = "#f9e2af"
+artist = "#a6e3a1"
+album = "#f5c2e7"
+song = "#94e2d5"
+muted = "#6c7086"
+highlight_bg = "#45475a"
+highlight_fg = "#cdd6f4"
+success = "#a6e3a1"
+error = "#f38ba8"
+playing = "#f9e2af"
+played = "#6c7086"
+border_focused = "#89b4fa"
+border_unfocused = "#45475a"
+
+[cava]
+gradient = ["#a6e3a1", "#94e2d5", "#89dceb", "#74c7ec", "#cba6f7", "#f5c2e7", "#f38ba8", "#f38ba8"]
+horizontal_gradient = ["#f38ba8", "#eba0ac", "#fab387", "#f9e2af", "#a6e3a1", "#94e2d5", "#89b4fa", "#cba6f7"]
