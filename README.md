@@ -29,4 +29,6 @@ This repository contains configuration files (dotfiles) for your system.
    ```
 
 ### Use optional install.sh.
-file included.
+   ```bash
+   ./install.sh
+   ```
