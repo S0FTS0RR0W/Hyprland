@@ -1,28 +1,19 @@
 # Dotfiles Installation
 
-## Thunar Custom Actions
+## Overview
 
-This repository contains configuration for **Thunar** file manager custom actions.
-
-### File: `Thunar/uca.xml`
-
-This configuration adds an **"Open Terminal Here"** action to the context menu within Thunar. It uses `exo-open` to launch the default terminal emulator in the current directory.
-
-**Prerequisites:**
-- `thunar`: The file manager.
-- `exo`: Provides the `exo-open` utility.
+This repository contains configuration files (dotfiles) for your system.
 
 ### Installation
 
 1.  **Backup your existing configuration** (optional but recommended):
     ```bash
-    cp ~/.config/Thunar/uca.xml ~/.config/Thunar/uca.xml.bak 2>/dev/null || true
+    cp -r ~/.config ~/.config.bak
     ```
 
-2.  **Install the configuration file**:
+2.  **Install the configuration files**:
     ```bash
-    mkdir -p ~/.config/Thunar
-    cp Thunar/uca.xml ~/.config/Thunar/uca.xml
+    cp -r * ~/.config/
     ```
 
 3.  **Apply changes**:
@@ -36,3 +27,6 @@ This configuration adds an **"Open Terminal Here"** action to the context menu w
    ```bash
    swww img ~/Pictures/wallpaper.png
    ```
+
+### Use optional install.sh.
+file included.
