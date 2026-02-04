@@ -34,6 +34,4 @@ This repository contains configuration files (dotfiles) for your system.
    ```
 
 ### Install dependencies (Arch Linux)
-    ```bash
     sudo pacman -S kitty hyprland swww rofi brightnessctl nwg-displays fastfetch btop waybar cava thunar
-    ```
