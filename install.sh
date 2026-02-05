@@ -1,3 +1,3 @@
-sudo cp * ~/.config/
+sudo cp -r * ~/.config/
 
-sudo pacman -S thunar kitty hyprland fastfetch rofi waybar cava btop swww nwg-displays
+sudo pacman -S kitty hyprland swww rofi brightnessctl nwg-displays fastfetch btop waybar cava thunar
