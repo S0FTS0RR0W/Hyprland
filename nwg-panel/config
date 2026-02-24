@@ -18,7 +18,6 @@
     "css-name": "panel-top",
     "modules-left": [
       "playerctl",
-      "hyprland-taskbar",
       "hyprland-workspaces"
     ],
     "modules-center": [
