@@ -14,10 +14,9 @@
     "padding-vertical": 0,
     "spacing": 0,
     "items-padding": 0,
-    "icons": "",
+    "icons": "dark",
     "css-name": "panel-top",
     "modules-left": [
-      "playerctl",
       "hyprland-workspaces"
     ],
     "modules-center": [
@@ -25,7 +24,8 @@
     ],
     "modules-right": [
       "sway-mode",
-      "playerctl"
+      "playerctl",
+      "button-pwrctl"
     ],
     "controls-settings": {
       "components": [
@@ -176,6 +176,15 @@
     "keyboard-layout": {},
     "niri-taskbar": {},
     "random-wallpaper": {},
-    "pinned": {}
+    "pinned": {},
+    "button-pwrctl": {
+      "command": "wlogout",
+      "icon": "system-shutdown-symbolic",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "",
+      "css-name": "",
+      "icon-size": 16
+    }
   }
 ]
